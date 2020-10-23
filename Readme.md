@@ -49,7 +49,13 @@ Unityユーザー向けのコース
 SpawnActorFromClass : アクターをレベル上に生成する。名前の通りActor以下を継承しているクラスのみ<br>
 GetActorForward/RightVector : アクターの向きを取得する。<br>
 
-
+### 変数について
+Instance Editable : publicみたいな感じ。<br>
+Blueprint Read Only : Constとほぼ同じ<br>
+Expose on Spawn : Spawn時に値を初期化できるようになる<br>
+Private : privateとほぼ同じ<br>
+Expose to Cinematics : シーケンサーのタイムラインから編集可能にする<br>
+<br>
 # UE4C++Tips
 ### UFunctionについて
 公式ドキュメント<br>
@@ -63,17 +69,21 @@ UFUNCTION(BlueprintCallable, Category = "CppTest")
 void TestFunc1();
 ```
 
-![test](./testfunc1.png)
+![test](./png/testfunc1.png)
 <br>
 <br>
 ・BlueprintPure : ブループリントから呼び出しができるようにする。実行ピンなし<br>
+
 
 ```cpp:BlueprintPure
 UFUNCTION(BlueprintPure, Category = "CppTest")
 FString TestFunc2();
 ```
 
-![test2](./testfunc2.png)
+
+
+
+![test2](./png/testfunc2.png)
 <br>
 <br>
 <br>
@@ -84,7 +94,7 @@ UFUNCTION(BlueprintCallable, Category = "CppTest")
 bool TestFunc3(int32 a, int32 &b, FString& c, bool &d);
 ```
 
-![test3](./testfunc3.png)
+![test3](./png/testfunc3.png)
 <br>
 <br>
 ### UPropertyについて
