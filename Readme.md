@@ -64,7 +64,7 @@ UE4のリフレクションシステムが定義したC++関数を認識でき�
 主に使うもの<br>
 ・BlueprintCallable : ブループリントから呼び出しができるようにする。実行ピンあり<br>
 
-```cpp:BlueprintCallable
+```cpp:BlueprintCallable.cpp
 UFUNCTION(BlueprintCallable, Category = "CppTest")
 void TestFunc1();
 ```
@@ -75,7 +75,7 @@ void TestFunc1();
 ・BlueprintPure : ブループリントから呼び出しができるようにする。実行ピンなし<br>
 
 
-```cpp:BlueprintPure
+```cpp:BlueprintPure.cpp
 UFUNCTION(BlueprintPure, Category = "CppTest")
 FString TestFunc2();
 ```
